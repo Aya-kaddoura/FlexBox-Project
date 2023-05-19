@@ -1,11 +1,16 @@
+html{
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .container{
-    max-width: 930px;
+    max-width: 960px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
@@ -19,25 +24,23 @@ body {
 
 .navbar h3 {
     color: white;
-    margin: 10px;
+    font-size: 1.7rem;
+    margin: 15px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    align-self: flex-end;
 }
 
 li {
-    float: right;
+    display: inline;
 }
 
 li a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
 }
 
@@ -45,30 +48,31 @@ li a:hover:not(.active) {
     background-color: #0151CC;
 }
 
-.withimage {
+.with-image {
     background-color: #0151CC;
     color: white;
+    
 }
 .text{
-    width: 45%;
+    width: 60%;
 }
 .text h1{
     font-size: 2.5rem;
 }
+.with-image img{
+    width: 35%;
+}
 
 .list{
     background-color: #a1c3ff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    flex: 1 1 auto;
 }
+
 .list section{
     color:white;
-    width: 250px;
-    height:130px;
+    width: 27%;
     background-color: #0151CC;
-    margin: 20px 10px 161px;
+    margin-top: 20px;
     padding: 5px 20px;
     border-radius: 5%;
     box-shadow: 5px 5px #88888886;
@@ -76,6 +80,7 @@ li a:hover:not(.active) {
 .list h3 i{
     margin: 5px;
 }
-.list h3 i [class="fa fa-arrows"]{
-    font-size: 25px;
+
+@media screen and (max-width=730) {
+    
 }
